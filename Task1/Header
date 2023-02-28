@@ -1,0 +1,10 @@
+#ifndef TIME_H
+#define TIME_H
+#include <iostream>
+class Time {
+    int hour;
+public:
+    Time();
+    Time get_diff(const Time other) const;
+
+};
