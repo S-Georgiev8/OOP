@@ -1,0 +1,28 @@
+#include "time.h"
+#include <iostream>
+Time::Time() {
+    this->hour = 0;
+    this->minutes = 0;
+    this->seconds = 0;
+
+}
+Time::Time(int hour, int minutes, int seconds) {
+    this->hour = hour;
+    this->minutes = minutes;
+    this->seconds = seconds;
+
+}
+void Time::set_hour(int_hour) {
+    if (hour > 24 || hour < 0)
+    {
+        this->hour = 0;
+    }
+    else {
+        this->hour = hour;
+    }
+}
+
+
+Time Time::get_diff(const Time other) const {
+
+}
