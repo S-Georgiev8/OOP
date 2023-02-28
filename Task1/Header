@@ -3,8 +3,21 @@
 #include <iostream>
 class Time {
     int hour;
+    int minutes;
+    int seconds;
 public:
     Time();
+    Time(int hour, int minutes, int seconds);
     Time get_diff(const Time other) const;
+    void set_hour(int hour);
+    void set_minutes(int minutes);
+    void set_seconds(int seconds);
+
+    void get_hour();
+    void get_minutes();
+    void get_seconds();
+
 
 };
+
+#endif
